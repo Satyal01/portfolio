@@ -28,7 +28,7 @@ gsap.from(".name span",{
     y: 40,
     opacity:0,
     duration : 1,
-    stagger : 0.1,
+    stagger : 0.1
 })
 
 
@@ -54,10 +54,14 @@ gsap.to(".skills",{
 
 gsap.to(".connect",{
     color : "white",
-    duration : 2,
+    duration : 5,
     opacity : 1,
     scrollTrigger : {
         trigger : ".connect-section",
+        scroller : "body",
+        start : "top 50%",
+        end : "bottom 40%",
+        markers : true,
         toggleActions : "play reset play reset",
     }
 })
@@ -76,15 +80,30 @@ gsap.to(".middle-section",{
     }
 })
 
+// gsap.to(".btech",{
+//     y : 100,
+//     duration :1,
+//     scrollTrigger :{
+//         trigger : ".middle-section",
+//         scroller : "body",
+//         start : "top 60%",
+//         end : "top 70%",
+//         j
+//     }
+// })
+
+
+
+
 gsap.to(".connect-section",{
-    y:-150,
+    y:-100,
     duration: 2,
     scrollTrigger : {
         trigger : ".connect-section",
         scroller : "body",
         // markers  : true,
-        start : "top 100%",
-        end :"bottom 0%",
+        start : "top 50%",
+        end :"bottom 80%",
         scrub : 1,
 
     }

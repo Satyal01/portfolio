@@ -13,16 +13,16 @@
 
 </head>
 
-<body>
-    <div class="flex justify-center  w-full h-auto fixed bottom-4 ">
+<body class="bg-black">
+    <div class="flex justify-center  w-full h-auto fixed bottom-4 z-10 ">
         <div class="h-9 w-sm rounded-md bg-[#222222] flex items-center gap-5 justify-evenly">
             <a href="" class="user"><i class="fa-solid fa-user fa-xl"></i></a>
             <a href="" class="skills"><i class="fa-solid fa-wand-magic-sparkles fa-xl"></i></a>
             <a href="" class="connect"><i class="fa-solid fa-envelope fa-xl"></i></a>
         </div>
     </div>
-    <main class="h-screen bg-black pt-50 pl-30 font-[Poppins] ">
-        <div class="bg--200 h-auto w-4xl  text-white bg--300 p-5 intro-section ">
+    <main class="bg-black pt-50 pl-30 font-[Poppins] pb-46 ">
+        <div class="h-auto w-4xl  text-white p-5 intro-section ">
             <p class="text-sm text-[#3E3E3E] pl-1">hey👋, my name is</p>
             <p class="text-8xl font-semibold name">Bhupesh Satyal</p>
             <p class="mt-4 text-2xl font-light pl-1  text-[#3E3E3E]">Aspiring Frontend Developer skilled in HTML, CSS, JavaScript, React, and TailwindCSS. Looking to create responsive and engaging web applications.</p>
@@ -33,8 +33,8 @@
             </div>
         </div>
     </main>
-    <section class="p-5 w-full bg-black flex justify-center items-start pt-10 ">
-        <div class=" text-white font-[Poppins] bg-[#222222] h-3/4 w-4xl middle-section p-5 rounded-lg">
+    <section class="p-10 w-full bg-black flex justify-center items-start pt-12 ">
+        <div class=" text-white font-[Poppins] bg-[#222222] h-3/4 w-4xl middle-section px-8 py-10 rounded-xl">
             <div class="skills-section">
                 <p class="font-semibold text-5xl  underline">Skills </p>
                 <div class="skills-logo mt-10 ml-10  flex gap-24">
@@ -49,19 +49,23 @@
             <div class="education-section mt-10">
                 <p class="font-semibold text-5xl underline ">Education <i class="fa-solid fa-book-open text-4xl"></i></p>
                 <div class=" mt-4 flex flex-col gap-2 ml-6  ">
-                    <p class="font-medium">Uttarakhand Technical University </p>
-                    <p class="font-thin">B.tech in Computer Science & Engineering  </p>
-                    <p class="font-thin">2023 -</p>
-                    <p class="mt-2 font-medium">Uttarakhand Board of Technical Eduaction </p>
-                    <p class="font-thin">Diploma in Computer Science & Engineering </p>
-                    <p class="font-thin">2020 - 2023</p>
+                    <div class="btech">
+                        <p class="font-medium">Uttarakhand Technical University </p>
+                        <p class="font-thin">B.tech in Computer Science & Engineering  </p>
+                        <p class="font-thin">2023 -</p>
+                    </div>
+                    <div class="diploma">
+                        <p class="mt-2 font-medium">Uttarakhand Board of Technical Eduaction </p>
+                        <p class="font-thin">Diploma in Computer Science & Engineering </p>
+                        <p class="font-thin">2020 - 2023</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="p-5 w-full bg-black pt-16 ">
-        <div class="connect-section bg-[#222222] font-[Poppins] text-white w-4xl h-auto  mx-auto rounded-xl p-5  ">
-            <p class="text-4xl font-semibold">lets connect</p>
+    <div class="p-2 w-full bg-black pb-1 ">
+        <div class="connect-section bg-[#222222] font-[Poppins] text-white w-4xl h-auto  mx-auto rounded-xl p-5 pb-10">
+            <p class="text-4xl font-semibold">let's connect</p>
             <form action=""  class="flex flex-col justify-center items-start gap-10 pl-10 pt-10 ">
 
                 <input type="text" name="fname " placeholder="Full Name" id="fname" 
