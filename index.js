@@ -38,6 +38,10 @@ gsap.to(".user",{
     opacity : 1,
     scrollTrigger : {
         trigger : ".intro-section",
+        scroler : "body",
+        start : "top 30%",
+        end : "top 10%",
+        // markers : true,
         toggleActions : "play reset play reset",
     }
 })
@@ -61,7 +65,7 @@ gsap.to(".connect",{
         scroller : "body",
         start : "top 50%",
         end : "bottom 40%",
-        markers : true,
+        // markers : true,
         toggleActions : "play reset play reset",
     }
 })
