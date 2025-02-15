@@ -19,24 +19,23 @@
   </head>
 
   <body class="bg-black">
-    <div class="flex justify-center w-full h-auto fixed bottom-4 z-10">
+    <!-- navbar -->
+    <div class="md:flex justify-center w-full h-auto fixed bottom-4  z-10 hidden ">
       <div
         class="h-9 w-sm rounded-md bg-[#222222] flex items-center gap-5 justify-evenly"
       >
-        <a href="" class="user"><i class="fa-solid fa-user fa-xl"></i></a>
-        <a href="" class="skills"
-          ><i class="fa-solid fa-wand-magic-sparkles fa-xl"></i
-        ></a>
-        <a href="" class="connect"
-          ><i class="fa-solid fa-envelope fa-xl"></i
+        <a href="#mainSection" class="user"><i class="fa-solid fa-user fa-xl"></i></a>
+        <a href="#skillsSection" class="skills"><i class="fa-solid fa-wand-magic-sparkles fa-xl"></i></a>
+        <a href="#connectSection" class="connect"><i class="fa-solid fa-envelope fa-xl"></i
         ></a>
       </div>
     </div>
-    <main class="bg-black pt-50 pl-30 font-[Poppins] pb-46">
-      <div class="h-auto w-4xl text-white p-5 intro-section">
-        <p class="text-sm text-[#3E3E3E] pl-1">hey👋, my name is</p>
+    <!-- main section -->
+    <main id="mainSection" class="bg-black pt-50 pl-10 md:pl-30 font-[Poppins] pb-46">
+      <div class="h-full w-4xl text-white p-5 intro-section">
+        <p class="text-sm text-[#585858] pl-1">hey👋, my name is</p>
         <p class="text-8xl font-semibold name">Bhupesh Satyal</p>
-        <p class="mt-4 text-2xl font-light pl-1 text-[#3E3E3E]">
+        <p class="mt-4 text-2xl font-normal pl-1 text-[#585858]">
           Aspiring Frontend Developer skilled in HTML, CSS, JavaScript, React,
           and TailwindCSS. Looking to create responsive and engaging web
           applications.
@@ -45,25 +44,26 @@
           <a
             href="https://www.instagram.com/ankit.satyal_/"
             target="_blank"
-            class="text-[#3E3E3E] hover:text-rose-300"
-            ><i class="fa-brands fa-instagram fa-xl" size="10rem"></i
+            class="text-rose-400 md:text-[#3E3E3E] md:hover:text-rose-300 "
+            ><i class="fa-brands fa-instagram text-4xl " size="10rem"></i
           ></a>
           <a
             href="https://github.com/Satyal01"
             target="_blank"
-            class="ml-4 text-[#3E3E3E] hover:text-slate-200"
-            ><i class="fa-brands fa-github fa-xl"></i
+            class="text-slate-200 ml-4 md:text-[#3E3E3E] md:hover:text-slate-200"
+            ><i class="fa-brands fa-github text-4xl"></i
           ></a>
           <a
             href="https://www.linkedin.com/in/bhupesh-satyal-46b1a32b5/"
             target="_blank"
-            class="ml-4 text-[#3E3E3E] hover:text-blue-400"
-            ><i class="fa-brands fa-linkedin fa-xl"></i
+            class="text-blue-400 ml-4 md:text-[#3E3E3E] md:hover:text-blue-400"
+            ><i class="fa-brands fa-linkedin text-4xl"></i
           ></a>
         </div>
       </div>
     </main>
-    <section class="p-10 w-full bg-black flex justify-center items-start pt-12">
+    <!-- middle section -->
+    <section id="skillsSection" class="p-10 w-full bg-blck flex justify-start md:justify-center items-start pt-12">
       <div
         class="text-white font-[Poppins] bg-[#222222] h-3/4 w-4xl middle-section p-10 rounded-xl"
       >
@@ -71,22 +71,22 @@
           <p class="font-semibold text-5xl underline">Skills</p>
           <div class="skills-logo mt-10 flex gap-24">
             <i
-              class="fa-brands text-zinc-500 hover:text-[#ff5733] text-6xl fa-html5 hover:scale-120 transition-all duration-500 ease-in-out"
+              class="fa-brands text-[#ff5733] md:text-zinc-500 md:hover:text-[#ff5733] text-6xl fa-html5 hover:scale-120 transition-all duration-500 ease-in-out"
             ></i>
             <i
-              class="fa-brands text-zinc-500 hover:text-blue-400 fa-css text-6xl hover:scale-120 transition-all duration-500 ease-in-out"
+              class="fa-brands text-blue-400 md:text-zinc-500 md:hover:text-blue-400 fa-css text-6xl hover:scale-120 transition-all duration-500 ease-in-out"
             ></i>
             <i
-              class="fa-brands text-zinc-500 hover:text-[#fcdc00] fa-js text-6xl hover:scale-120 transition-all duration-500 ease-in-out"
+              class="fa-brands text-[#fcdc00] md:text-zinc-500 md:hover:text-[#fcdc00] fa-js text-6xl hover:scale-120 transition-all duration-500 ease-in-out"
             ></i>
             <i
-              class="fa-brands text-zinc-500 hover:text-white fa-github text-6xl hover:scale-120 transition-all duration-500 ease-in-out"
+              class="fa-brands text-white md:text-zinc-500 md:hover:text-white fa-github text-6xl hover:scale-120 transition-all duration-500 ease-in-out"
             ></i>
             <i
-              class="fa-brands text-zinc-500 hover:text-[#f14e32] fa-git text-6xl hover:scale-120 transition-all duration-500 ease-in-out"
+              class="fa-brands text-[#f14e32] md:text-zinc-500 md:hover:text-[#f14e32] fa-git text-6xl hover:scale-120 transition-all duration-500 ease-in-out"
             ></i>
             <i
-              class="fa-brands text-zinc-500 hover:text-[#58c4dc] fa-react text-6xl hover:scale-120 transition-all duration-500 ease-in-out"
+              class="fa-brands text-[#58c4dc] md:text-zinc-500 md:hover:text-[#58c4dc] fa-react text-6xl hover:scale-120 transition-all duration-500 ease-in-out"
             ></i>
           </div>
         </div>
@@ -97,29 +97,25 @@
           <div class="mt-4 flex flex-col gap-2 ml-6">
             <div class="btech mt-5">
               <p class="font-medium">Uttarakhand Technical University</p>
-              <p class="font-thin">B.tech in Computer Science & Engineering</p>
+              <p class="font-extralight">B.tech in Computer Science & Engineering</p>
               <p class="font-thin">2023 -</p>
             </div>
             <div class="diploma">
               <p class="mt-2 font-medium">
                 Uttarakhand Board of Technical Eduaction
               </p>
-              <p class="font-thin">Diploma in Computer Science & Engineering</p>
+              <p class="font-extralight">Diploma in Computer Science & Engineering</p>
               <p class="font-thin">2020 - 2023</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <div class="p-2 w-full bg-black pb-1">
-      <div
-        class="connect-section bg-[#222222] font-[Poppins] text-white w-4xl h-auto mx-auto rounded-xl p-5 pb-10"
-      >
+    <!-- lets connect -->
+    <section id="connectSection" class="p-2 pl-10 md:pl-0 w-full bg-black pb-1">
+      <div class="connect-section bg-[#222222] font-[Poppins] text-white w-4xl h-auto mx-auto rounded-xl p-5 pb-10">
         <p class="text-4xl font-semibold">let's connect</p>
-        <form
-          action=""
-          class="flex flex-col justify-center items-start gap-10 pl-10 pt-10"
-        >
+        <div class="flex flex-col justify-center items-start gap-10 pl-10 pt-10">
           <input
             type="text"
             name="fname "
@@ -139,9 +135,9 @@
             class="border-4 border-[#3e3e3e] border-double p-4 rounded-lg"
             ><i class="fa-regular fa-paper-plane"></i> send message</a
           >
-        </form>
+        </div>
       </div>
-    </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
     <script src="./index.js"></script>

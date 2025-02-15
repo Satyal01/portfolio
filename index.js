@@ -72,7 +72,7 @@ gsap.to(".connect",{
 
 gsap.to(".middle-section",{
     y:-150,
-    duration: 2,
+    duration: 1,
     scrollTrigger : {
         trigger : ".middle-section",
         scroller : "body",
@@ -101,7 +101,7 @@ gsap.to(".middle-section",{
 
 gsap.to(".connect-section",{
     y:-100,
-    duration: 2,
+    duration:1,
     scrollTrigger : {
         trigger : ".connect-section",
         scroller : "body",
