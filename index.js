@@ -16,10 +16,6 @@ function breakTheText(){
 
     name.innerHTML = subtext;
 
-    console.log(subtext)
-
-    console.log(name)
-     
 }
 
 breakTheText();
