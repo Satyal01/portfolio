@@ -108,3 +108,18 @@ gsap.to(".connect-section",{
 
     }
 })
+
+// mail to  whitespace begin replace by + solution
+const email = document.querySelector(".form")
+
+console.log(email);
+
+email.addEventListener("submit",function(e){
+    e.preventDefault();
+    console.log(this);
+    const subject = encodeURIComponent(this.subject.value);
+    const body= encodeURIComponent(this.body.value);
+
+    const mailtoLink = `mailto:ankitsatyal6@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = mailtoLink;
+});
