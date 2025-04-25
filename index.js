@@ -20,12 +20,12 @@ function breakTheText() {
 
 breakTheText();
 
-gsap.from(".name span", {
-  y: 40,
-  opacity: 0,
-  duration: 1,
-  stagger: 0.1,
-});
+// gsap.from(".name span", {
+//   y: 40,
+//   opacity: 0,
+//   duration: 1,
+//   stagger: 0.1,
+// });
 
 
 // the scroll animation 
