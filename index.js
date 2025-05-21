@@ -31,6 +31,8 @@ breakTheText();
 // the scroll animation 
 let mm = gsap.matchMedia();
 
+// always use markers to know about start and end position
+
 mm.add("(min-width: 768px)",()=>{
     gsap.to(".user", {
         color: "white",
@@ -39,12 +41,26 @@ mm.add("(min-width: 768px)",()=>{
         scrollTrigger: {
           trigger: ".intro-section",
           scroler: "body",
-          start: "top 30%",
+          start: "top 29%",
           end: "top 10%",
           // markers : true,
           toggleActions: "play reset play reset",
         },
       });
+
+
+    gsap.to(".project",{
+        color: "white",
+        duration: 2,
+        opacity : 1,
+        scrollTrigger: {
+          trigger : ".project-section",
+          start : "top 80%",
+          end : "top 10%",
+          // markers : true,
+          toggleActions: "play reset play reset",
+        },
+      })
       
       gsap.to(".skills", {
         color: "white",
@@ -52,6 +68,9 @@ mm.add("(min-width: 768px)",()=>{
         opacity: 1,
         scrollTrigger: {
           trigger: ".skills-section",
+          top : "top 50%",
+          end : "top 25%",
+          // markers: true,
           toggleActions: "play reset play reset",
         },
       });
@@ -69,6 +88,22 @@ mm.add("(min-width: 768px)",()=>{
           toggleActions: "play reset play reset",
         },
       });
+
+
+      //  sidling upword animation code
+
+      gsap.to(".project-section",{
+        y : -100,
+        duration:1,
+        scrollTrigger:{
+          trigger : ".project-section",
+          scroller : "body",
+          start: "top 60%",
+          end : "top 50%",
+          scrub : 1,
+          // markers : true
+        }
+      })
       
       gsap.to(".middle-section", {
         y: -150,
@@ -91,7 +126,7 @@ mm.add("(min-width: 768px)",()=>{
       //         scroller : "body",
       //         start : "top 60%",
       //         end : "top 70%",
-      //         j
+      //         scrub : 1,
       //     }
       // })
       
