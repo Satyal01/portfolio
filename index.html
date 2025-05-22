@@ -86,13 +86,20 @@
       <div class="w-4xl p-10 md:h-[28rem]  md:bg-[#222222] rounded-lg project-section">
 
         
-        <div class=" h-40  md:bg-[#222222]  md:w-full md:flex-row  jutify-center items-center md:h-3/4">
+        <div class="h-54 md:h-40 md:bg-[#222222]  md:w-full md:flex-row  jutify-center items-center md:h-3/4">
           <p class="font-semibold text-3xl underline ">Projects</p>
-          <div class="mt-4 w-48 border-1 p-1 border-white  rounded-lg ">
-            <a href="https://satyal01-movie-seek.netlify.app/" target="_blank"><img src="movieSeek.png" alt="movieseekImage"></a>
-            <div class="pl-2 mt-2  ">
-              <p class="text-sm">movieSeek React App</p>
-              <p class="text-xs text-[#585858]">users can serach about movies</p>
+          <div class="mt-4 w-70  border-1 p-1 border-white  rounded-lg b-red-200 md:h-50 md:w-full flex flex-col md:flex-row md:gap-8 md:p-3 md:pl-4 ">
+            <div class="md:w-2/5 mt-2  rounded">
+              <a href="https://satyal01-movie-seek.netlify.app/" target="_blank">
+              <img src="movieSeek.png" class="md:hidden h-26" alt="movieseekImage">
+              <video autoplay muted loop class="hidden md:block h-auto rounded-lg ">
+                <source src="movieSeek.mp4" type="video/mp4">
+              </video>
+              </a>
+            </div>
+            <div class="pl-2 mt-2 bg-lue-200 md:w-1/2 md:h-32  ">
+              <p class="text-sm md:text-2xl uppercase md:font-semibold">movie Seek React App</a></p>
+              <p class="text-xs text-[#585858] md:text-lg">MovieSeek lets users search movies, view details like ratings and posters, and save favorites with a smooth, personalized experience.</p>
             </div>
           </div>
         </div>

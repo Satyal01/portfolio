@@ -18,7 +18,7 @@ function breakTheText() {
   name.innerHTML = subtext;
 }
 
-breakTheText();
+// breakTheText();
 
 // gsap.from(".name span", {
 //   y: 40,
