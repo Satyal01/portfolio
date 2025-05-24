@@ -93,7 +93,7 @@ mm.add("(min-width: 768px)",()=>{
       //  sidling upword animation code
 
       gsap.to(".project-section",{
-        y : -100,
+        y : -150,
         duration:1,
         scrollTrigger:{
           trigger : ".project-section",
@@ -131,7 +131,7 @@ mm.add("(min-width: 768px)",()=>{
       // })
       
       gsap.to(".connect-section", {
-        y: -100,
+        y: -150,
         duration: 1,
         scrollTrigger: {
           trigger: ".connect-section",
@@ -170,11 +170,17 @@ email.addEventListener("submit", function (e) {
 
   params['time'] = time;
 
-  // console.log(params);
+  
 
-  sendEmail(params);
+
+
+  // sendEmail(params);
   const status = document.querySelector(".submitButton");
+  prevHTML = status.innerHTML
   status.innerHTML = "<i class='fa-solid fa-circle-check text-green-500 mr-2'></i> Got it! We’ll be in touch shortly 🤝"
   
   email.reset();
+  setInterval(()=>{
+    status.innerHTML = prevHTML; 
+  }, 4000);
 });
