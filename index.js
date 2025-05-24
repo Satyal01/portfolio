@@ -151,11 +151,30 @@ mm.add("(min-width: 768px)",()=>{
 // mail to  whitespace begin replace by + solution
 const email = document.querySelector(".form");
 
+function sendEmail(templateParams){
+  emailjs.send("service_k0mjcid","template_2szfuuz",templateParams);
+}
+
 email.addEventListener("submit", function (e) {
   e.preventDefault();
-  const subject = encodeURIComponent(this.subject.value);
-  const body = encodeURIComponent(this.body.value);
+  
+  let  params = {};
+  const formData = new FormData(email)
+  const dateObj = new Date();
 
-  const mailtoLink = `mailto:ankitsatyal6@gmail.com?subject=${subject}&body=${body}`;
-  window.location.href = mailtoLink;
+  const time = dateObj.toTimeString() + " " + dateObj.toLocaleDateString();
+  
+  for(let [key, value] of formData.entries()){
+    params[key] = value;
+  }
+
+  params['time'] = time;
+
+  // console.log(params);
+
+  sendEmail(params);
+  const status = document.querySelector(".submitButton");
+  status.innerHTML = "<i class='fa-solid fa-circle-check text-green-500 mr-2'></i> Got it! We’ll be in touch shortly 🤝"
+  
+  email.reset();
 });
