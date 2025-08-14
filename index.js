@@ -108,7 +108,7 @@ mm.add("(max-width:480px)", () => {
       trigger: "#connectSection",
       start: "top 70%",
       end: "top 50%",
-      markers: true,
+      // markers: true,
       toggleActions: "play none none reset",
 
     }
