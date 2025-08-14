@@ -27,7 +27,7 @@
 
 <body class="bg-black">
   <!-- navbar -->
-  <div class="md:flex justify-center w-full h-auto fixed bottom-4 z-10 hidden">
+  <div id="Nav" class=" md:flex justify-center w-full h-auto fixed bottom-4 z-10 hidden">
     <div class="h-9 w-sm rounded-md bg-[#222222] flex items-center  gap-5 justify-evenly">
       <a href="#mainSection" class="user"><i class="fa-solid fa-user fa-xl"></i></a>
       <a href="#projectSection" class="project">
@@ -38,15 +38,15 @@
     </div>
   </div>
   <!-- main section -->
-  <main id="mainSection" class="bg-black pt-15 md:pt-50 pl-8 md:pl-30 font-[Poppins]  md:pb-46 ">
+  <main id="mainSection" class="bg-black pt-15 md:pt-50 pl-8 md:pl-30 font-[Poppins]  md:pb-40 ">
     <div class="h-auto w-76  md:h-full   md:w-4xl  text-white  md:p-5 intro-section">
       <p class="text-xs md:text-sm text-[#585858] pl-1">hey👋, my name is</p>
-      <p class="text-3xl md:text-8xl font-semibold name pl-1 md:pl-0">Bhupesh Satyal</p>
-      <p class="text-xs mt-4 md:text-xl font-normal pl-1 text-[#585858]">
+      <p id="name" class="text-3xl md:text-8xl font-semibold name pl-1 md:pl-0">Bhupesh Satyal</p>
+      <p id="desc" class="text-xs mt-4 md:text-xl font-normal pl-1 text-[#585858]">
         A computer enthusiast passionate about technology, currently focused on web development using HTML, CSS,
         JavaScript, React, and Tailwind CSS.
       </p>
-      <div class="bg--400 mt-4 pl-2">
+      <div id="socialM-icons" class="bg--400 mt-4 pl-2">
         <a href="https://www.instagram.com/ankit.satyal_/" target="_blank" class="text-rose-400  "><i
             class="text-xl fa-brands fa-instagram md:text-4xl" size="10rem"></i></a>
         <a href="https://github.com/Satyal01" target="_blank" class="text-slate-200 ml-4 "><i
@@ -62,14 +62,14 @@
   </main>
   <!-- middle section -->
   <section id="projectSection"
-    class="font-[Poppins] md:w-full md:py-10 md:mb-20  flex justify-center items-center text-white ">
-    <div class="w-4xl p-10 md:h-[28rem]  md:bg-[#222222] rounded-lg project-section">
+    class="font-[Poppins]  md:w-full md:py-10 md:mb-20  flex justify-center items-center text-white ">
+    <div id="Projects" class=" w-4xl p-10 md:h-[28rem]  md:bg-[#222222] rounded-lg project-section">
 
 
       <div class="h-54 md:h-40 md:bg-[#222222]  md:w-full md:flex-row  jutify-center items-center md:h-3/4">
         <p class="font-semibold text-3xl underline ">Projects</p>
         <div
-          class="mt-4 w-70  border-1 p-1 border-white  rounded-lg b-red-200 md:h-50 md:w-full flex flex-col md:flex-row md:gap-8 md:p-3 md:pl-4 ">
+          class="mt-4 w-70  border-1 p-1 mt-4 md:mt-0 border-white  rounded-lg b-red-200 md:h-50 md:w-full flex flex-col md:flex-row md:gap-8 md:p-3 md:pl-4 ">
           <div class="md:w-2/5 mt-2  rounded">
             <a href="https://satyal01-movie-seek.netlify.app/" target="_blank">
               <img src="movieSeek.png" class="md:hidden h-28 p-1 " alt="movieseekImage">
@@ -90,13 +90,13 @@
   </section>
 
 
-  <section id="skillsSection"
-    class=" w-76  pl-10 pt-10 md:p-5 md:w-full flex justify-start md:justify-center items-start mt-2 md:mt-0  md:mb-18  md:pt-5">
-    <div class="text-white font-[Poppins]  md:bg-[#222222] h-3/4 w-4xl middle-section  md:p-10 rounded-xl">
+  <section id="skillsSection" 
+    class=" w-76  pl-10 pt-10 md:p-5 md:w-full flex justify-start md:justify-center items-start mt-2 md:mt-0  md:my-30  md:pt-5">
+    <div  id="#Skills" class=" text-white font-[Poppins]  md:bg-[#222222] h-3/4 w-4xl middle-section  md:p-10 rounded-xl">
       <div class="skills-section ">
         <p class="font-semibold text-3xl  md:text-4xl underline">Skills</p>
-        <div
-          class="flex flex-wrap skills-logo mt-4 md:mt-10 gap-5  md:gap-8 justify-start md:justify-center  md:gap-25 bg--400">
+        <div 
+          class="sk-icon flex flex-wrap skills-logo mt-4 md:mt-10 gap-5  md:gap-8 justify-start md:justify-center  md:gap-25 bg--400">
 
           <i
             class=" fa-brands text-[#ff5733] md:text-zinc-500 md:hover:text-[#ff5733] text-4xl  md:text-5xl fa-html5 hover:scale-120 transition-transform duration-400 ease-in-out"></i>
@@ -117,8 +117,28 @@
         <p class="font-semibold text-3xl md:text-4xl underline">
           Education <i class="fa-solid fa-book-open text-2xl md:text-3xl"></i>
         </p>
-        <div class="mt-1 flex flex-col gap-1">
-          <div class="btech mt-1 md:mt-4">
+
+        <div class="mt-1 md:pl-8 flex flex-col gap-1 relative pl-10 ">
+          <div class="bg--200  bdg-transparent w-5 h-60 absolute -top-0 -left-0">
+                <svg widht="100%" height="100%" class="hidden md:block">
+
+                  <path d="M 15 10 L 14 150" stroke="white" stroke-width="5" stroke-linecap="round"  />
+                  <circle  cx="15"  cy="28" r="7" fill="white"  />
+                  <circle  cx="15"  cy="105" r="7" fill="white"  />
+                  <!-- <path d="M 15 25 Q 9 55 40 50 " fill="none" stroke="#7F8C8D" stroke-width="5" stroke-linecap="round" />
+                  <path d="M 15 35 Q 15 140 35  126" fill="none" stroke="#7F8C8D" stroke-width="5" stroke-linecap="round"/>
+                  <circle  cx="15" cy="29" r="6" fill="#7F8C8D" />
+                  <circle  cx="40" cy="50" r="6" fill="#7F8C8D" />
+                  <circle cx="40" cy="125" r="6" fill="#7F8C8D" /> -->
+                </svg>
+                <svg width="100%" height="100%" class="block md:hidden">
+                  <path d="M 10 20 L 10  200" stroke="gray" stroke-width="5" stroke-linecap="round" />
+                  <circle  cx="10"  cy="28" r="5" fill="white"  />
+                  <circle  cx="10"  cy="125" r="5" fill="white"  />
+
+                </svg>
+          </div>
+          <div class="btech mt-5 md:mt-4 ">
             <p class="font-medium text-sm md:text-base">Uttarakhand Technical University</p>
             <p class="font-extralight text-xs md:text-sm">
               B.tech in Computer Science & Engineering
@@ -139,7 +159,7 @@
     </div>
   </section>
   <!-- lets connect -->
-  <section id="connectSection" class="mt-5 md:mt-0 p-2  w-76 md:pl-0  md:w-full pb-1  ">
+  <section id="connectSection" class="mt-5 md:mt-0 p-2  w-76 md:pl-0  md:w-full pb-1 md:pb-20 ">
     <div
       class="connect-section md:bg-[#222222] font-[Poppins] text-white md:w-4xl h-auto mx-auto rounded-xl  p-8 pb-10">
       <p class="text-2xl md:text-4xl font-semibold ">let's connect <i class="fa-solid fa-link text-2xl md:text-3xl"></i>
