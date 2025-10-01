@@ -94,7 +94,7 @@ mm.add("(max-width:480px)", () => {
       start: "top 75%",
       end: "top 30%",
       // markers : true,
-      toggleActions: "play none none reset",
+      // toggleActions: "play none none reset",
 
     }
   })
@@ -106,10 +106,10 @@ mm.add("(max-width:480px)", () => {
     duration: 1,
     scrollTrigger: {
       trigger: "#connectSection",
-      start: "top 70%",
+      start: "top 80%",
       end: "top 50%",
       // markers: true,
-      toggleActions: "play none none reset",
+      // toggleActions: "play none none reset",
 
     }
   })
