@@ -238,7 +238,7 @@ email.addEventListener("submit", function (e) {
   sendEmail(params);
   const status = document.querySelector(".submitButton");
   prevHTML = status.innerHTML
-  status.innerHTML = "<i class='fa-solid fa-circle-check text-green-500 mr-2'></i> Got it! We’ll be in touch shortly 🤝"
+  status.innerHTML = "<i class='fa-solid fa-circle-check text-green-500 mr-2'></i> Got it! We'll be in touch shortly 🤝"
 
   email.reset();
   setInterval(() => {
