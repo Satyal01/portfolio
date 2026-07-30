@@ -91,7 +91,7 @@ mm.add("(max-width:480px)", () => {
     duration: 0.8,
     scrollTrigger: {
       trigger: "#skillsSection",
-      start: "top 75%",
+      start: "top 50%",
       end: "top 30%",
       // markers : true,
       // toggleActions: "play none none reset",
